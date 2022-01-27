@@ -11,7 +11,7 @@ public class Swap2Number {
 
         System.out.println("before swapping number.. " +a+ " " +b);
 
-        // 1st method
+        // using third variable method
         /*
         int c = a;
         a = b;
