@@ -19,7 +19,7 @@ public class Swap2Number {
 
          */
 
-        // 2nd method
+        // using + & - method
         /*
         a = a+b;
         b = a-b;
@@ -27,7 +27,7 @@ public class Swap2Number {
 
          */
 
-        // 3rd method
+        // using * & / method
         a = a*b;
         b = a/b;
         a = a/b;
