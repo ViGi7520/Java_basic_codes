@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class swapping_numbers {
     public static void main(String[] args) {
 
-        Scanner num= new Scanner(System.in);
+        Scanner num = new Scanner(System.in);
 
         System.out.println("Enter two numbers...");
         int a = num.nextInt();
