@@ -28,6 +28,7 @@ public class Count_even_and_odd_number_in_digit
             }
             System.out.println("Number of Even digits:- " + count_even);
             System.out.println("Number of Odd digits:- " +count_odd);
+            sc.close();
 
     }
 
