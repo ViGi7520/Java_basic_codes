@@ -15,5 +15,6 @@ public class Count_number_in_digit {
             count++;
         }
         System.out.println("Number of digits:- " +count);
+        sc.close();
     }
 }

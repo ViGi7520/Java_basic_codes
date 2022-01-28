@@ -24,5 +24,6 @@ public class Find_the_largest_of_3_num {
         else{
             System.out.println("Third number \""+c+"\" is the largest number ");
         }
+        sc.close();
     }
 }

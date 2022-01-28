@@ -24,5 +24,6 @@ public class Palindrome_string {
         else{
             System.out.println("This is not a Palindrome String- "+str);
         }
+        sc.close();
     }
 }

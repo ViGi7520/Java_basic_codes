@@ -16,6 +16,7 @@ public class Sum_of_digits_in_number {
 
         }
         System.out.println("Sum of Digit in a Number- "+sum);
+        sc.close();
 
     }
 }

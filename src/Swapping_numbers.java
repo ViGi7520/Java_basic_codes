@@ -33,5 +33,6 @@ public class Swapping_numbers {
         a = a/b;
 
         System.out.println("after swapping number.. " +a+ " " +b);
+        num.close();
     }
 }
