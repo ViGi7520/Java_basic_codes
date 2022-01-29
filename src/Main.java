@@ -14,10 +14,10 @@ public class Main {
         System.out.println("4:- Count Number in Digit");
         System.out.println("5:- Count Even & Odd Number in Digit");
         System.out.println("6:- Find the Largest of 3 numbers");
+        System.out.println("7:- Sum of Digits in Number");
 
         System.out.print("Choose operation by entering the number:-");
         int operation = sc.nextInt();
-        
 
         switch (operation) {
             case 1 -> {
@@ -44,6 +44,11 @@ public class Main {
                 System.out.println("Find the Largest of 3 Numbers");
                 Find_largest_of_3numbers();
             }
+            case 7 -> {
+                System.out.println("Sum of Digits in Number");
+                Sum_of_digits_in_number();
+
+            }
             default -> System.out.println("Invalid input");
         }
         System.out.println("\n Program exited...");
@@ -52,11 +57,11 @@ public class Main {
 
         Scanner num = new Scanner(System.in);
 
-        System.out.println("Enter two numbers...");
+        System.out.print("Enter two numbers...");
         int a = num.nextInt();
         int b = num.nextInt();
 
-        System.out.println("before swapping number.. " +a+ " " +b);
+        System.out.println("Before swapping number.. " +a+ " " +b);
 
         // using third variable method
         /*
@@ -79,13 +84,15 @@ public class Main {
         b = a/b;
         a = a/b;
 
-        System.out.println("after swapping number.. " +a+ " " +b);
+        System.out.println("After swapping number.. " +a+ " " +b);
         num.close();
     }
     public static void Reverse_number() {
+        System.out.print("Enter a number:-");
+
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number");
         int num = sc.nextInt();
+
         System.out.println("Original number- "+num);
 
         int rev = 0;
@@ -116,17 +123,17 @@ public class Main {
 
         if(org==rev)
         {
-            System.out.println(org+ " -This is a palindrome number");
+            System.out.println(org+ " -This is a Palindrome number");
         }
         else
         {
-            System.out.println(org+ " -This is not a palindrome number");
+            System.out.println(org+ " -This is not a Palindrome number");
         }
         sc.close();
     }
     public static void Count_number_in_digit() {
 
-        System.out.println("Enter a Number:- ");
+        System.out.print("Enter a Number:- ");
         Scanner sc = new Scanner(System.in);
 
         int num = sc.nextInt();
@@ -142,7 +149,7 @@ public class Main {
     }
     public static void Count_even_odd_number_in_digit() {
 
-             System.out.println("Enter a Number:- ");
+             System.out.print("Enter a Number:- ");
              Scanner sc = new Scanner(System.in);
 
              int num = sc.nextInt();
@@ -182,15 +189,32 @@ public class Main {
         //System.out.println(a+" "+b+" "+c);
 
         if(a>b && a>c){
-            System.out.println("First number \""+a+"\" is the largest number");
+            System.out.println("\nFirst number \""+a+"\" is the largest number");
         }
         else if(b>a && b>c){
-            System.out.println("Second number \""+b+"\" is the largest number");
+            System.out.println("\nSecond number \""+b+"\" is the largest number");
         }
         else{
-            System.out.println("Third number \""+c+"\" is the largest number ");
+            System.out.println("\nThird number \""+c+"\" is the largest number ");
         }
         sc.close();
+    }
+    public static void Sum_of_digits_in_number() {
+
+        System.out.print("Enter a number:- ");
+        Scanner sc = new Scanner(System.in);
+
+        int num = sc.nextInt();
+        int sum = 0;
+
+        while(num!=0){
+            sum = sum + num%10;         //note- '%' gives last number of the digit
+            num = num/10;               //note- '/' removes last number of the digit
+
+        }
+        System.out.println("Sum of Digit in a Number- "+sum);
+        sc.close();
+
     }
 
 }
