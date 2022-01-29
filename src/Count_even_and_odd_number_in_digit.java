@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class Count_even_and_odd_number_in_digit
 {
-
-    public static void main(String[] args)
+    public static void main()
     {
 
         System.out.println("Enter a Number:- ");
