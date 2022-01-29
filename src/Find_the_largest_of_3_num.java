@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Find_the_largest_of_3_num {
-    public static void main() {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter First number:-");
