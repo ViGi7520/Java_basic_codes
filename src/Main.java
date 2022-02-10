@@ -15,8 +15,9 @@ public class Main {
         System.out.println("5:- Count Even & Odd Number in Digit");
         System.out.println("6:- Find the Largest of 3 numbers");
         System.out.println("7:- Sum of Digits in Number");
+        System.out.println("8:- Factorial of a Number");
 
-        System.out.print("Choose operation by entering the number:-");
+        System.out.print("Choose operation by entering the number:- ");
         int operation = sc.nextInt();
 
         switch (operation) {
@@ -47,7 +48,10 @@ public class Main {
             case 7 -> {
                 System.out.println("Sum of Digits in Number");
                 Sum_of_digits_in_number();
-
+            }
+            case 8 -> {
+                System.out.println("Factorial of a Number");
+                Factorial_num();
             }
             default -> System.out.println("Invalid input");
         }
@@ -216,5 +220,16 @@ public class Main {
         sc.close();
 
     }
+    public static void Factorial_num() {
 
+        System.out.print("Enter a number:- ");
+        Scanner sc= new Scanner(System.in);
+        int num= sc.nextInt();
+        long factorial = 1;
+
+        for (int i=1;i<=num;i++){
+            factorial=factorial * i;
+        }
+        System.out.println("Factorial of "+num+" is: "+factorial);
+    }
 }
