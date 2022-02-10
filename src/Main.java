@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -16,6 +17,7 @@ public class Main {
         System.out.println("6:- Find the Largest of 3 numbers");
         System.out.println("7:- Sum of Digits in Number");
         System.out.println("8:- Factorial of a Number");
+        System.out.println("9:- Random Number");
 
         System.out.print("Choose operation by entering the number:- ");
         int operation = sc.nextInt();
@@ -52,6 +54,10 @@ public class Main {
             case 8 -> {
                 System.out.println("Factorial of a Number");
                 Factorial_num();
+            }
+            case 9 -> {
+                System.out.println("Random Number");
+                Find_random_num();
             }
             default -> System.out.println("Invalid input");
         }
@@ -232,4 +238,16 @@ public class Main {
         }
         System.out.println("Factorial of "+num+" is: "+factorial);
     }
+    public static void Find_random_num() {
+
+        System.out.print("Find Random num between 0 to ");
+        Scanner sc = new Scanner(System.in);
+        int end = sc.nextInt();
+
+        Random rand=new Random();
+        int rand_int = rand.nextInt(end);
+
+        System.out.println(rand_int);
+    }
+
 }

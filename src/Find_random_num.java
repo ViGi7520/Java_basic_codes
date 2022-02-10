@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Find_random_num {
     public static void main(String[] args) {
 
-        System.out.println("Find Random num between 0 to ");
+        System.out.print("Find Random num between 0 to ");
         Scanner sc = new Scanner(System.in);
         int end = sc.nextInt();
 
