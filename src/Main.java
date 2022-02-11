@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        boolean input = true;
         Scanner sc = new Scanner(System.in);
+        sc.close();
 
         System.out.println("This is combinations of various mathematical terms");
         System.out.println("Our Operations as follows:-");
