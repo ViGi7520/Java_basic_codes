@@ -11,5 +11,6 @@ public class Subtraction {
         float result = a - b;
 
         System.out.println("The Result is: " + result);
+        sc.close();
     }
 }

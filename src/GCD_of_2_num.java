@@ -17,6 +17,7 @@ public class GCD_of_2_num {
             }
 
             System.out.println("GCD of " + n1 + " and " + n2 + " is " + gcd);
+            sc.close();
         }
 
     }

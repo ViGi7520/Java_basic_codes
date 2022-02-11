@@ -12,5 +12,6 @@ public class Find_random_num {
         int rand_int = rand.nextInt(end);
 
         System.out.println(rand_int);
+        sc.close();
     }
 }

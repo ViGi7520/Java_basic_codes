@@ -14,6 +14,7 @@ public class Fibonacci_series {
             System.out.println(+sum);
             num1=num2;
             num2=sum;
+            sc.close();
         }
     }
 }

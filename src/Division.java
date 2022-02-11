@@ -10,5 +10,6 @@ public class Division {
         float result = a / b;
 
         System.out.println("The result is: " + result);
+        sc.close();
     }
 }

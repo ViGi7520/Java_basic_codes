@@ -16,6 +16,8 @@ import java.util.Scanner;
             }
             int lcm = (n1 * n2) / gcd;
             System.out.printf("The LCM of %d and %d is %d.", n1, n2, lcm);
+            sc.close();
+
         }
     }
 }
