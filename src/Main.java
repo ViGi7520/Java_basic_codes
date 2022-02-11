@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        sc.close();
+        
 
         System.out.println("This is combinations of various mathematical terms");
         System.out.println("Our Operations as follows:-");
@@ -21,7 +21,7 @@ public class Main {
 
         System.out.print("Choose operation by entering the number:- ");
         int operation = sc.nextInt();
-
+        
         switch (operation) {
             case 1 -> {
                 System.out.println("Swapping of Number selected");
@@ -62,6 +62,7 @@ public class Main {
             default -> System.out.println("Invalid input");
         }
         System.out.println("\n Program exited...");
+        sc.close();
         }
     public static void Swapping_numbers() {
 
@@ -232,11 +233,13 @@ public class Main {
         Scanner sc= new Scanner(System.in);
         int num= sc.nextInt();
         long factorial = 1;
+        
 
         for (int i=1;i<=num;i++){
             factorial=factorial * i;
         }
         System.out.println("Factorial of "+num+" is: "+factorial);
+        
     }
     public static void Find_random_num() {
 
@@ -248,6 +251,7 @@ public class Main {
         int rand_int = rand.nextInt(end);
 
         System.out.println(rand_int);
+        sc.close();
     }
 
 }
