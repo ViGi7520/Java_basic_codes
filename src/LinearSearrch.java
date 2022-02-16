@@ -10,12 +10,11 @@ public class LinearSearrch {
 
         boolean found=false;
 
-        for (int j : a) {
+        for (int j : a)
             if (j == search) {
                 System.out.println("Element Found");
                 found = true;
             }
-        }
         if(!found) {
             System.out.println("Element not Found");
         }
