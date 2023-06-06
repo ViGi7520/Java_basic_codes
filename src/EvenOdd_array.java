@@ -31,5 +31,7 @@ public class EvenOdd_array {
             if(value%2!=0)
                 System.out.println(value);
         }
+
+        input.close();
     }
 }

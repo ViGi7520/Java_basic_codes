@@ -27,5 +27,7 @@ public class Check_max_min_arrayvalue {
 
         }
         System.out.println("Minimum value in an array: "+min);
+        input.close();
+       
     }
 }

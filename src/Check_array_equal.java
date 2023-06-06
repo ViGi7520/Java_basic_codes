@@ -1,4 +1,4 @@
-import java.lang.reflect.Array;
+// import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -32,5 +32,8 @@ public class Check_array_equal {
         {
             System.out.println("Arrays are not Equal");
         }
+
+        input.close();
+        input1.close();
     }
 }

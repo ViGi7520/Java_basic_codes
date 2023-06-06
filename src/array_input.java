@@ -14,5 +14,6 @@ public class array_input {
         for (int i = 0; i < a.length; i++) {  //print elements from array
             System.out.println(a[i]);
         }
+        input.close();
     }
 }
