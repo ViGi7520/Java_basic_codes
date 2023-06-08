@@ -51,6 +51,7 @@ public class ref {
         } else {
             System.out.println("Invalid operation");
         }
+        sc.close();
     }
 
 }

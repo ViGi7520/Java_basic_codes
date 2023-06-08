@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LinearSearrch {
+public class LinearSearch {
     public static void main(String[] args) {
         int[] a= {10,20,30,40,50};
 
@@ -18,5 +18,6 @@ public class LinearSearrch {
         if(!found) {
             System.out.println("Element not Found");
         }
+        sc.close();
     }
 }
